@@ -1,0 +1,315 @@
+*
+{
+    margin: 0;
+    padding: 0;
+}
+html
+{
+    scroll-behavior: smooth;
+}
+/* Utility classes */
+.hp
+{
+    font-family: 'Signika Negative', sans-serif;
+    font-size: 9vh;
+    padding: 15px;
+    /* font-family: 'Nunito Sans', sans-serif; */
+}
+.hs
+{
+    font-family: 'Inter', sans-serif;
+    font-size: 1rem;
+    padding: 2px;
+}
+/* .lb
+{
+    background-color: rgb(197, 231, 247);
+} */
+::selection
+{
+    color: crimson;
+    background-color: gold;
+}
+/* Navbar */
+#navbar
+{
+    display: flex;
+    align-items: center;
+    position: relative;
+    /* height: 64px; */
+}
+#navbar::before
+{
+    content: '';
+    background-color: rgb(44, 43, 40);
+    opacity: 0.5;
+    position: absolute;
+    z-index: -1;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+#navbar .logo
+{
+    margin: 2px 25px;
+}
+#navbar .logo img
+{
+    margin: 0;
+    height: 70px;
+    border-radius: 50%;
+}
+#navbar .nav-items 
+{
+    display: flex;
+    list-style: none;
+}
+#navbar .nav-items a
+{
+    color: crimson;
+    margin: 4px 23px;
+    text-decoration: none;
+    padding: 4px 16px;
+    font-size: 1.2rem;
+    font-family: 'Nunito Sans', sans-serif;
+}
+#navbar .nav-items a:hover
+{
+    border: 1.5px solid rgb(168, 226, 32);
+    background-color: darksalmon;
+    border-radius: 10px;
+}
+/* Navbar End */
+/* Home Section Start */
+#home
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 150px;
+    height: 502px;}
+#home::before
+{
+    content: '';
+    position: absolute;
+    background: url(../img/bg.jpg) no-repeat center center/cover;
+    z-index: -2;
+    height: 570px;
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+
+#home h1
+{
+        color: rgb(87, 226, 52);
+}
+#home p
+{
+    color: crimson;
+    font-weight: 600;
+}
+#home .btn {
+    margin: 15px 10px;
+    padding: 5px 18px;
+    border-radius: 8px;
+    background-color: darksalmon;
+    border: 2px solid rgb(45, 172, 45);
+    cursor: pointer;
+}
+#home .btn:hover
+{
+    background: none;
+    border-radius: 1px;
+    transition: .3s;
+}
+/* Home section End */
+/* About Section start */
+#about
+{
+    display: flex;
+    margin: 25px;
+}
+
+.title
+{
+    font-weight: 800;
+    color: crimson;
+    text-align: center;
+    margin: 10px;
+    background: url(../img/title-bg.jpg) no-repeat center center/cover;
+}
+#about .box
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
+    border-radius: 5%;
+    margin: 5px;
+}
+#about .box:hover
+{
+    background-color: white;
+}
+#about .box h2
+{
+    margin: 20px;
+    font-family: 'Signika Negative', sans-serif;
+    font-size: 7vh;
+    padding: 15px;
+}
+#about .box p
+{
+    text-align: center;
+    padding: 14px;
+    color: crimson;
+    font-weight: 600;
+    line-height: 25px;
+}
+.box img
+{
+    height: 250px;
+    display: block;
+    margin: 50px 20px 50px 12px;
+}
+/* About sextion End */
+/* Cources Section Start */
+#cources
+{
+    display: flex;
+    margin: 45px;
+}
+#cources .box
+{
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px;
+    border: 2px solid black;
+    border-radius: 5%;
+    margin: 20px;
+}
+#cources .box:hover
+{
+    box-shadow: 6px 10px rgb(59, 176, 223);
+    transition: .4s;
+}
+#cources .box h2
+{
+    font-family: 'Signika Negative', sans-serif;
+    font-size: 5vh;
+    padding: 10px;
+    margin: 5px;
+}
+#cources .box p
+{
+    font-weight: 800;
+}
+#cources .box li
+{
+    margin: 4px 1px;
+    list-style: disc;
+}
+#cources .box .btn
+{
+    margin: 15px 10px;
+    padding: 5px 18px;
+    border-radius: 8px;
+    background-color: darksalmon;
+    border: 2px solid rgb(45, 172, 45);
+    cursor: pointer;
+}
+#cources .box .btn:hover
+{
+    background: none;
+    transition: .5s;
+    border-radius: 0;
+}
+/* Cources section End */
+/* Contact section Start */
+#contact-section
+{
+    position: relative;
+}
+
+#contact
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 35px;
+    background: url(../img/contact.jpg) no-repeat center center/cover;
+}
+#contact .form .group label
+{
+    font-family: 'Signika Negative', sans-serif;
+    font-size: 1rem;
+    color: crimson;
+    font-weight: 600;
+} 
+#contact .form .group
+{
+    margin: 10px;
+}
+#contact .form
+{
+    width: 43%;
+}
+#contact .form .group input,
+#contact .form .group textarea
+{
+    width: 100%;
+    padding: 1rem;
+    resize: none;
+    border: 2px;
+    font-size: 1.1rem;
+}
+/* Contact-Section Ends */
+/* Footer Starts  */
+#footer-section
+{
+    display: block;
+}
+#footer-section .box
+{
+    padding: 5px ;
+    display: flex;
+    align-self: center;
+    background: skyblue;
+    justify-content: center;
+}
+#footer-section .box p
+{
+    margin: 10px;
+}
+#footer-section .box a
+{
+    color: crimson;
+    cursor: pointer;
+}
+#footer-section .box .fa-brands
+{
+    margin: 0 8px;
+}
+#footer-section .box .fa-facebook:hover
+{
+    color: rgb(34, 34, 163);
+}
+#footer-section .box .fa-instagram:hover
+{
+    color: rgb(233, 36, 36);
+}
+#footer-section .box .fa-twitter:hover
+{
+    color: rgb(15, 161, 161);
+}
+#footer-section .box .fa-youtube:hover
+{
+    color: red;
+}
+/* Footer Ends */
