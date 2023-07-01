@@ -138,5 +138,33 @@
         </div>
     </footer>
     <script src="https://kit.fontawesome.com/605a398b0b.js" crossorigin="anonymous"></script>
+    <footer id="footer-section">
+        <div class="box">
+            <p>Copyright &copy; <a>Ankushbhardwajcodes</a> | All rights Reserved!</p>
+        </div>
+        
+        <div class="box">
+            <i class="fa-brands fa-facebook"><a href="#"></a></i>
+            <i class="fa-brands fa-instagram"><a href="#"></a></i>
+            <i class="fa-brands fa-twitter"><a href="#"></a></i>
+            <i class="fa-brands fa-youtube"><a href="#"></a></i>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+      // Make a request to Visitor Count API
+      axios.get("https://api.countapi.xyz/hit/your-namespace/your-key")
+        .then(function(response) {
+          var count = response.data.value;
+          // Update the count on the webpage
+          document.getElementById("visitor-count").innerText = count;
+        })
+        .catch(function(error) {
+          console.log(error);
+        });
+    });
+  </script>
+  <p>Visitor Count: <span id="visitor-count">Loading...</span></p>
 </body>
 </html>
